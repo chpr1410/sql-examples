@@ -15,7 +15,7 @@ WITH
                  INNER JOIN TABLE_3 p WITH(NOLOCK) ON qli.Product2Id = p.Id  -- 1:1 
                  INNER JOIN TABLE_4 o WITH(NOLOCK) ON p.LegacyTreatmentOption__c = o.Id  -- 1:1
            
-		   GROUP BY qu.accountId --individual account
+	    GROUP BY qu.accountId --individual account
        ),
 
        TreatmentPlanInfo -- get specific treatment plans and classes
