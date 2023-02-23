@@ -32,7 +32,8 @@ WHERE
 	and ci.Active__c = 'true'
 ;
 
-SELECT -- get table of cancels.  Agents aren't awarded points for cancels
+SELECT -- get table of cancels.  Agents aren't awarded points for cancels.  Additionally, agents don't get points for schedules that they made and cancelled in the same day.  
+	-- Had a problem with agents 'sniping' other agent's schedules.
 	isnull(ah.lead__c,ah.Account__c) AS  'id',
 	ah.CreatedDate,
 	ah.Action__c,
