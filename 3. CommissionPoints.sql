@@ -3,7 +3,7 @@ Query to get call center commission "points" and the relevant metrics
 Call center agents are compensated ON a commission model.  This model rewards points for each patient that the agent schedules 
 Different quality of leads gives the agents different point values.
 
-This query drives a PowerBI dashboard that stakeholders use to monitor/award call center commission points
+This query drives a PowerBI dashboard that stakeholders use to monitor/award call center commission
 */
 
 
