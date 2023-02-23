@@ -70,8 +70,6 @@ SELECT
 	SUM(t.points) AS  'points'
 FROM
 	#table t
-WHERE month(t.Apt_Date__c) = 11
-
 GROUP BY
 	t.sched_agent,
 	month(t.Apt_Date__c)
